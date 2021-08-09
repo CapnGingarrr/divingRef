@@ -37,5 +37,3 @@ d_check['ID'] = d_check['ID'].astype('int64')
 # Rename all videos in file to match new ID - mainly to help any manual validation that must be performed
 for index, video in enumerate(vids):
     os.rename(os.path.join(path, video), os.path.join(path, ''.join([str(index), '.mp4'])))
-
-
